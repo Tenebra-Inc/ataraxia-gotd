@@ -6,3 +6,4 @@
 3. After NPC intersection maybe do NPC-to-NPC interaction.
 4. Make home scenes, keep them active on town active, out of screen.
 5. Keep track of performance \ resource usage.
+6. Change PropertyController into global script.

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Ataraxia - Gate to Heaven"
+config/name="Ataraxia - Gates of the Devil"
 config/description="Open-world survival RPG with indepth health/combat/e.t.c systems.
 07/10/24: It's gonna be a long ride."
 config/version="0.0.1"
