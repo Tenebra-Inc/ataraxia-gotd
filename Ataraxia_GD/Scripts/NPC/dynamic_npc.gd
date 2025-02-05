@@ -97,15 +97,6 @@ func sprite_handler():
 		pronouns["third_face"] = "it"
 		pronouns["possesive"] = "it's"
 	
-#func collision_handler(direction):
-	#var raycast_x = tile_size * inputs[direction][0]
-	#var raycast_y = tile_size * inputs[direction][1]
-	#$RayCast2D.target_position = Vector2(raycast_x, raycast_y)
-	#$RayCast2D.force_raycast_update()
-	#return !$RayCast2D.is_colliding()
-
-# do a better version, handle big time diff for future
-# split events by small\average\big inactive time to optimize
 func _on_time_process(time_amount: int):
 	var ticks_to_process: int = TimeProcesser.time_to_ticks(time_amount)
 	age += ticks_to_process
