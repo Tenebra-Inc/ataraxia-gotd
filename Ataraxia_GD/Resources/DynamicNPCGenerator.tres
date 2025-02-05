@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DynamicNPCGen" load_steps=2 format=3 uid="uid://dsmokstevxkxo"]
+[gd_resource type="Resource" script_class="DynamicNPCGen" load_steps=2 format=3 uid="uid://xfgwh2aw1t6o"]
 
 [ext_resource type="Script" path="res://Resources/DynamicNPCGenerator.gd" id="1_3mjiw"]
 

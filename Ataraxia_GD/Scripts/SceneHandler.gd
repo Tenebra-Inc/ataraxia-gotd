@@ -1,6 +1,5 @@
 extends Node2D
 class_name SceneHandler
-var NPCSpawnerObject = load("res://Resources/NPCSpawner.tres")
 var SCENE_NPCS: Dictionary
 var inactive_time: int = 0
 var inactive: bool = true
@@ -16,20 +15,6 @@ func _init() -> void: print("Scene initialized")
 func _ready() -> void:
 	TimeProcesser.process_time.connect(process_global_time)
 	print("%s::%s" % [_ready, name])
-	# load_homes()
-	SCENE_NPCS = NPCSpawnerObject.spawnNPCs(spawnpoints)
-	addNPCs()
-	
-func addNPCs():
-	print(addNPCs)
-	for NPC_object in SCENE_NPCS.values():
-		NPC_object.NPC_DESTROY.connect(removeNPC)
-		add_child(NPC_object)
-
-func removeNPC(NPC_UID: int) -> void:
-	print("%s::%d" % [removeNPC, NPC_UID])
-	if SCENE_NPCS.erase(NPC_UID): print("%d erased successfully" % NPC_UID)
-	else: print("Cannot erase %d, non-existent" % NPC_UID)
 	
 func spawn_player(player_object: Node = null, preferred_spawnpoint: Vector2i = Vector2i()) -> void:
 	print("%s::%s::%s" % [spawn_player, player_object, scene_name])
@@ -51,7 +36,7 @@ func unload_player() -> Node2D:
 # accumulate time for region, send time to towns on player entering reg instead, include
 # last-time-visited for towns
 # UPD: on region enter switch time processing for region towns to active
-func process_global_time(global_time_tick: int = 0):
+func process_global_time(global_time_tick: int = 0) -> void:
 	if inactive:
 		inactive_time += global_time_tick
 		print("%s: Inactive time accumulated: %d" % [name, inactive_time])
@@ -63,6 +48,6 @@ func process_global_time(global_time_tick: int = 0):
 			return
 		process_active_time(global_time_tick)
 
-func process_active_time(time_to_process: int):
+func process_active_time(time_to_process: int) -> void:
 	print("%s is processing time: %d" % [name, time_to_process])
 	npc_process_time.emit(time_to_process)
