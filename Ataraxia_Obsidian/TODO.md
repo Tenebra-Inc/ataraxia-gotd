@@ -1,7 +1,0 @@
-- [x] Basic stats&race controllers
-- [x] Basic health
-- [x] Basic movement
-- [ ] Tilesets (improved)
-- [ ] Basic combat
-- [ ] Basic UI
-- [ ] Basic sprites

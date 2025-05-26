@@ -1,1 +1,0 @@
-Elven matriarchy, lead by Queen Sharani. Region mostly focused on fishing and agriculture.
