@@ -1,3 +1,5 @@
-*.png.import
+# Godot 4+ specific ignores
+.godot/
+/android/
 *.import
-settings.json
+export_settings/
