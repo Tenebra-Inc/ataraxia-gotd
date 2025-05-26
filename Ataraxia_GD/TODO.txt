@@ -1,9 +1,0 @@
-# Probably gonna switch from spawning DNPC at start to encounter spawning. SNPC stay the same. (less to compute, easier to handle)
-1. Split routine into navigation module and routine module. Premade paths for now.
-1.1 Make work class into Resource: BaseWork -> custom works from there
-1.2 Give routine stamina. Decrease on work, increase on rest at home \ sppoint
-2. Work on single DNPC movement -> NPC intersection. Think about 2+ NPCs \ 2 NPC + player handling.
-3. After NPC intersection maybe do NPC-to-NPC interaction.
-4. Make home scenes, keep them active on town active, out of screen.
-5. Keep track of performance \ resource usage.
-6. Change PropertyController into global script.
