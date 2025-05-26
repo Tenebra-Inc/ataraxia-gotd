@@ -1,0 +1,31 @@
+First column (Grey)
+#1f1d1b
+#323c39
+#595652
+#696a6a
+
+Second column (Black)
+#000000
+#333333
+#666666
+#999999
+
+Third column (Yellow)
+#72510c
+#ffad00
+#d79200
+#ffc54b
+
+Forth column (Red)
+#880000
+#ca0417
+#ac3232
+#e08282
+
+Additional
+#ffffff
+#0028cf Maine blue
+#cfa700 ???? hazel
+#28cf00 Furi green
+#cf0090 ???? fucsia
+#a700cf ???? purple
